@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="weatherapp.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- <link rel="icon" href="画像のURL" sizes="32x32" /> -->
+    <!-- <link rel="icon" href="画像のURL" sizes="192x192" /> -->
+    <title>How the weather.</title>
+  </head>
+  <body>
+    <header><h1>How the weather.</h1></header>
+
+    <div class="info-area">
+      <div class="info">
+        <div id="location"></div>
+        <div id="datetime"></div>
+      </div>
+
+      <div class="city-buttons">
+        <button onclick="fetchWeather(city.nagoya)">名古屋</button>
+        <button onclick="fetchWeather(city.tokyo)">東京</button>
+        <button onclick="fetchWeather(city.osaka)">大阪</button>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="wrapper"></div>
+    </div>
+
+    <footer>20260129_01</footer>
+
+    <!-- JSファイル読み込み -->
+    <script src="weatherapp.js"></script>
+  </body>
+</html>
